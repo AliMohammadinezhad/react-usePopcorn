@@ -1,7 +1,6 @@
 import { useState } from "react";
-import WatchedMoviesList from "./WatchedMoviesList";
 
-export default function WatchedMoviesBox() {
+export default function Box({ children }) {
   const [isOpen2, setIsOpen2] = useState(true);
 
   return (
@@ -12,7 +11,7 @@ export default function WatchedMoviesBox() {
       >
         {isOpen2 ? "–" : "+"}
       </button>
-      {isOpen2 && <WatchedMoviesList />}
+      {isOpen2 && children}
     </div>
   );
 }

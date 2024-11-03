@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { tempWatchedData } from "./TempData";
 import WatchedMovie from "./WatchedMovie";
 import WatchedMovieSummery from "./WatchedMovieSummery";
 
-export default function WatchedMoviesList() {
-  const [watched, setWatched] = useState(tempWatchedData);
+export default function WatchedMoviesList({watched}) {
   return (
     <>
       <WatchedMovieSummery watched={watched} />
