@@ -41,10 +41,8 @@ export default function StarRating({
 
   function handleRating(rating) {
     onSetRating(rating);
-    setRating(rating);
-    }
-    
-    
+    setRating(() => rating);
+  }
 
   return (
     <div style={containerStyle} className={className}>

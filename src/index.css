@@ -49,12 +49,36 @@ body {
   justify-content: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-background-100);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--color-background-500);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-background-100);
+}
+
 .box {
   width: 42rem;
   max-width: 42rem;
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
@@ -138,7 +162,7 @@ body {
 .list {
   list-style: none;
   padding: 0.8rem 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .list-watched {
@@ -346,4 +370,3 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
 */
-
