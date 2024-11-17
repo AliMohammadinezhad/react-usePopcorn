@@ -1,7 +1,7 @@
 import WatchedMovie from "./WatchedMovie";
 import WatchedMovieSummery from "./WatchedMovieSummery";
 
-export default function WatchedMoviesList({watched, onDeleteWatched}) {
+export default function WatchedMoviesList({ watched, onDeleteWatched }) {
   return (
     <>
       <WatchedMovieSummery watched={watched} />
